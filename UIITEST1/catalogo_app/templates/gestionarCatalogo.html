@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+
+{% block titulo %} Gestion de Catalogo {% endblock %}
+
+{% block cuerpo %}  
+<h1>Gestionar Catalogo Dorle Zuñiga</h1>
+{% for m in loscatalogos %}
+
+<li>{{m.id_catalogo}}.-.-.-.{{m.fecha_inicio}}.-.-.-.{{m.fecha_fin}}.-.-.-.{{m.nombre}}.-.-.-.{{m.promocion}}.-.-.-.{{m.colecciones}}.-.-.-.{{m.novedades}}</li>
+{% endfor %}
+{% endblock %}
